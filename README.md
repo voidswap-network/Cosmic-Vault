@@ -4,7 +4,7 @@ Our Vault is a smart contract that runs on all our supported blockchains. When a
 
 > The Cosmic Vault cannot interact or make any sort of calls to the renounced smart contract.
 
-If a team requires the ownership to be transferred back to them for any reason, they simply need to wait for the time to elapse and then pay the Vault the necessary [fee](/@voidswap/s/voidswap/~/drafts/-Mei-LyTG1ogMJu4a2Z4/fees/platform-fees#contract-vault). Then the ownership will be automatically transferred back to the previous owner.
+If a team requires the ownership to be transferred back to them for any reason, they simply need to wait for the time to elapse and then pay the Vault the necessary fee. Then the ownership will be automatically transferred back to the previous owner.
 
 > The **ONLY** address that can reclaim ownership of a contract stored in the Cosmic Vault is the one that initiated to transfer in the first place. In other words, **ONLY** the previous owner can get ownership of a stored contract in the Cosmic Vault.
 
