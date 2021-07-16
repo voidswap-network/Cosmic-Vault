@@ -9,15 +9,7 @@ If a team requires the ownership to be transferred back to them for any reason, 
 > The **ONLY** address that can reclaim ownership of a contract stored in the Cosmic Vault is the one that initiated to transfer in the first place. In other words, **ONLY** the previous owner can get ownership of a stored contract in the Cosmic Vault.
 
 ## Flow Mechanics
-```mermaid
-graph LR
-A((owner)) -- storeInCosmicVault --> B{Cosmic Vault}
-B -- timeElapsed --> C(Unlocked Pool)
-A -- restoreContract --> B
-B-- timeNotElapsed --> A
-B -- feePayed --> C
-C --> A
-```
+![enter image description here](https://uploads-ssl.webflow.com/60e68647ab86ed50d89dbad6/60f12de83965cf244a1f24d3_Screenshot%202021-07-16%20095735.png)
 
 ## Requirements
 
