@@ -15,4 +15,4 @@ If a team requires the ownership to be transferred back to them for any reason, 
 
 When teams want to initiate an ownership transfer to the Cosmic Vault, they need to make sure that their smart contract abides with the requirement.
 
-We have modified the OpenZappelin's [**Ownable.sol**](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol). Teams need to make sure that their smart contracts inherit from our **CVOwnable.sol** instead. Simply replace the `contract Ownable is Context` block from your smart contract with the code below depending on your deployment environment:
+We have modified the OpenZappelin's [**Ownable.sol**](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol). Teams need to make sure that their smart contracts inherit from our **CVOwnable.sol** instead. Simply replace the `contract Ownable is Context` block from your smart contract with our implementation.
