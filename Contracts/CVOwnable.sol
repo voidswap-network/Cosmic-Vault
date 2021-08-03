@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT License
-// voidswap.network
+// voidswap.netwrok
 
 pragma solidity ^0.8.6;
 
@@ -18,6 +18,17 @@ pragma solidity ^0.8.6;
  * `onlyOwner`, which can be applied to your functions to restrict their use to
  * the owner.
  */
+ 
+ abstract contract Context {
+    function _msgSender() internal view virtual returns (address payable) {
+        return payable(msg.sender);
+    }
+
+    function _msgData() internal view virtual returns (bytes memory) {
+        this;
+        return msg.data;
+    }
+}
 
 contract CVOwnable is Context {
     address private _owner;
