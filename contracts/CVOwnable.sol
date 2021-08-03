@@ -92,7 +92,7 @@ contract CVOwnable is Context {
      * NOTE Can only be called by the current owner.
      */
     function storeInCosmicVault(address cosmicVault, uint256 unlockTime) public virtual onlyOwner {
-        require(cosmicVault != address(0), "CVOwnable: new owner is the zero address");
+        require(cosmicVault != address(0), "CVOwnable: zero address");
         _previousOwner = _owner;
         _unlockTime = unlockTime;
         emit OwnershipTransferred(_previousOwner, cosmicVault);
@@ -105,7 +105,7 @@ contract CVOwnable is Context {
      * NOTE Can only be called by the current owner.
      */
     function transferOwnership(address newOwner) public virtual onlyOwner {
-        require(newOwner != address(0), "CVOwnable: new owner is the zero address");
+        require(newOwner != address(0), "CVOwnable: zero address");
         _setOwner(newOwner);
     }
 
